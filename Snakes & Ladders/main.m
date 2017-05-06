@@ -42,7 +42,7 @@ int main(int argc, const char * argv[]) {
         Player *readyPlayerOne = [[Player alloc]init];
         
         
-        while (true) {
+        while (!readyPlayerOne.gameOver) {
             
             char inputChars[255];
             printf("Type \"r\" to roll:");
@@ -54,9 +54,9 @@ int main(int argc, const char * argv[]) {
             
             if ([parsedString containsString:@"r"]) {
                 [readyPlayerOne roll];
-                NSLog(@"Current square: %ld",(long)readyPlayerOne.currentSquare);
+                
             }
-            
+            [readyPlayerOne gameStateChecker];
             
         }
         
