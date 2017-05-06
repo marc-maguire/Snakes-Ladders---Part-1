@@ -30,10 +30,6 @@ The app will inform the user which square they have landed on and whether they h
 When the user passes square 100 the game is over. Rnd the game and congratulate them.
 */
 
-//get to square 100 first
-//if bottom of ladder > move to top of ladder
-//if top of snakes head, move to bottom of snakes tail.
-
 #include "Player.h"
 
 int main(int argc, const char * argv[]) {
