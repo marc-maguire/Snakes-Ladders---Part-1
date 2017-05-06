@@ -54,6 +54,7 @@ int main(int argc, const char * argv[]) {
             
             if ([parsedString containsString:@"r"]) {
                 [readyPlayerOne roll];
+                NSLog(@"Current square: %ld",(long)readyPlayerOne.currentSquare);
             }
             
             
